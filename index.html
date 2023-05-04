@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, viewport-fit=cover">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" scr="https://github.com/HHNiOS/hhnios.github.io/blob/main/img/hhn.png?raw=true">
+    <link rel="apple-touch-icon" scr="  png logo ">
     <title>Ký ipa IOS HHNiOS</title>
-    <link rel="shortcut icon" type="image/png" href="https://github.com/HHNiOS/hhnios.github.io/blob/main/img/hhn.png?raw=true">
-    <script type="text/javascript" src="css/js/vue.min.js"></script>
-    <script type="text/javascript" src="css/js/axios.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./butky.png">
+    <script type="text/javascript" src="./example.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript" src="https://sign.ipasign.cc/js/index.js"></script>
-    <script type="text/javascript" src="css/js/qrcode.min.js"></script>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="./style.js"></script>
+    <link rel="stylesheet" href="./app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
@@ -178,7 +177,7 @@
                                         <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
                                             <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
                                             <label data-browse="Chọn" class="custom-file-label" for="ipa">
-                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
+                                            <span class="d-block form-file-text" style="pointer-events: none;">Chọn Tệp IPA ...</span>
                                         </label>
                                         </div>
                                     </div>
@@ -189,7 +188,7 @@
                                         <div class="custom-file b-form-file is-invalid" v-bind:class="p12Css">
                                             <input type="file" @change="getFile($event)" ref="p12" required="required" accept=".p12" aria-required="true" class="custom-file-input" v-bind:class="p12Css" id="p12" style="z-index: -5;">
                                             <label data-browse="Chọn" class="custom-file-label" for="p12">
-                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ p12Text }}</span>
+                                            <span class="d-block form-file-text" style="pointer-events: none;">Tệp Chứng Chỉ .P12 ...</span>
                                         </label>
                                         </div>
                                     </div>
@@ -203,7 +202,7 @@
                                         <div class="custom-file b-form-file" v-bind:class="mobCss">
                                             <input type="file" ref="mob" @change="getFile($event)" required="required" accept=".mobileprovision" aria-required="true" class="custom-file-input" v-bind:class="mobCss" id="mobileprovision" style="z-index: -5;">
                                             <label data-browse="Chọn" class="custom-file-label" for="mobileprovision">
-                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ mobText }}</span>
+                                            <span class="d-block form-file-text" style="pointer-events: none;">Tệp Chứng Chỉ .Mobileprovision ...</span>
                                         </label>
                                         </div>
                                     </div>

@@ -1385,8 +1385,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */:root {
-       --blue: #3490dc;
-       --indigo: #6574cd;
+       --blue: #dc3434;
+       --indigo: #0026ff;
        --purple: #9561e2;
        --pink: #f66d9b;
        --red: #e3342f;
@@ -1394,14 +1394,14 @@
        --yellow: #ffed4a;
        --green: #38c172;
        --teal: #4dc0b5;
-       --cyan: #6cb2eb;
+       --cyan: #ff0000;
        --white: #fff;
        --gray: #6c757d;
        --gray-dark: #343a40;
-       --primary: #3490dc;
+       --primary: #008cff;
        --secondary: #6c757d;
        --success: #38c172;
-       --info: #6cb2eb;
+       --info: #00eeff;
        --warning: #ffed4a;
        --danger: #e3342f;
        --light: #f8f9fa;
@@ -1523,7 +1523,7 @@ sup {
 }
 
 a {
-    color: #3490dc;
+    color: #008cff;
     text-decoration: none;
     background-color: transparent
 }

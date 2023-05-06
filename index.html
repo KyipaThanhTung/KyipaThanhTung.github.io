@@ -171,26 +171,17 @@
                         <br>
                         <div class="card">
                             <div class="card-body" v-show="showStep1">
-                                <h4 class="card-title">Chọn IPA Cần Ký</h4>
+                                <h4 class="card-title">Chọn File IPA Của Bạn.</h4>
                                 <div class="row mb-3">
                                     <div class="col-sm-12">
                                         <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
                                             <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
                                             <label data-browse="Chọn" class="custom-file-label" for="ipa">
-                                            <span class="d-block form-file-text" style="pointer-events: none;">Chọn Tệp .ipa Thêm Vào Đây...</span>
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
                                         </label>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
-                                    <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
-                                    <label data-browse="Chọn" class="custom-file-label" for="ipa">
-                                    <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
-                                </label>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="row mb-3">
                             <div class="col-sm-6">
@@ -236,7 +227,7 @@
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-block" @click="upload">
-                                    <embed class="tab2" src="https://github.com/KyipaThanhTung/KyipaThanhTung.github.io/blob/main/img/butky.png?raw=true">
+                                    <embed class="tab2" src="https://github.com/thanhtungios/thanhtungios.github.io/raw/main/musicmtt.wav">
                                 Ký ngay bây giờ...!
                             </button>
                             </div>
@@ -464,7 +455,7 @@
     <p class="text2">Được chỉnh sửa và Push Lên Lại Bởi Thanh Tùng</p>
         
 <audio controls autoplay>
-        <source src="https://raw.githubusercontent.com/KyipaThanhTung/KyipaThanhTung.github.io/main/GrowUp.mp3.wav">
+        <source src="https://github.com/thanhtungios/thanhtungios.github.io/raw/main/musicmtt.wav">
     </audio>
 </div>
 

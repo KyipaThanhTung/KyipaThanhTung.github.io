@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, viewport-fit=cover">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" scr="https://github.com/KyipaThanhTung/KyipaThanhTung.github.io/blob/main/img/logo2023.jpg?raw=true">
-    <title>Ký IPA Online Thanh Tùng iOS🐧</title>
-    <link rel="shortcut icon" type="image/png" href="https://github.com/KyipaThanhTung/KyipaThanhTung.github.io/blob/main/img/logo2023.jpg?raw=true">
-    <script type="text/javascript" src="./vue.min.js"></script>
-    <script type="text/javascript" src="./axios.min.js"></script>
+    <link rel="apple-touch-icon" scr="https://github.com/HHNiOS/hhnios.github.io/blob/main/img/hhn.png?raw=true">
+    <title>Ký ipa IOS HHNiOS</title>
+    <link rel="shortcut icon" type="image/png" href="https://github.com/HHNiOS/hhnios.github.io/blob/main/img/hhn.png?raw=true">
+    <script type="text/javascript" src="vue.min.js"></script>
+    <script type="text/javascript" src="axios.min.js"></script>
     <script type="text/javascript" src="https://sign.ipasign.cc/js/index.js"></script>
-    <script type="text/javascript" src="./qrcode.min.js"></script>
-    <link rel="stylesheet" href="./app.css">
+    <script type="text/javascript" src="qrcode.min.js"></script>
+    <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
@@ -153,91 +153,95 @@
     <div id="app">
         <div class="p-0 container-fluid">
 
-            <nav class="navbar navbar-dark bg-info navbar-expand-lg"><a href="#" target="_self" class="navbar-brand">Thanh TùngiOS🐧</a></nav>
+            <nav class="navbar navbar-dark bg-info navbar-expand-lg"><a href="#" target="_self" class="navbar-brand">メ Tùng. </a></nav>
             </p>
 
                 <div class="row mt-5">
                     <div class="col-sm-12 col-md-10 offset-md-1">
                         <transition name="fade">
-                            <div v-show="show" role="alert" aria-live="polite" aria-atomic="rue" class="alert alert-dismissible alert-info">
-                                <h4 class="alert-heading">Dịch vụ này cho phép bạn ký ipa Trực Tiếp Trên Iphone Hoặc Ipad !</h4>
-                                <li>Chọn Tệp IPA Cần Ký</li>
-                                <li>Tệp Chứng Chỉ .P12</li>
-                                <li>Tệp Chứng Chỉ .Mobileprovision</li>
-                                <li>Làm Tí Nhạc Rồi Ký Đỡ Sầu😂</li>
-                                <li> <audio controls autoplay>
-                                    <source src="https://github.com/thanhtungios/thanhtungios.github.io/raw/main/musicmtt.wav">
-                                </audio> 
-                                <li>Kho IPA Tham Khảo <span class="badge badge-secondary"> <a class="link1" href="https://thanhtungipa.bio.link/">Kho IPA No Jailbrack</a></span> </p>
+                            <div v-show="show" role="alert" aria-live="polite" aria-atomic="true" class="alert alert-dismissible alert-info">
+                                <li class="alert-heading"> Dịch Vụ Này Cho Phép Ký IPA Ngay Trên Iphone Của Bạn !</h4>
+                                <li> Chọn một tệp .IPA <span class="badge badge-secondary">Ký ngay bây giờ!</p>
+                                <li> Chọn một tệp .P12.</p>
+                                <li> Chọn một tệp Mobipervision<li>
+                                <li>Đây không phải là kho lưu trữ nên IPA sau khi ký sẽ không lưu quá 15 Phút.</p>
+                                <li>Hãy đọc hướng dẫn sử dụng trước khi dùng.</p>
+                                <p>kho IPA tham khảo <span class="badge badge-secondary"> <a class="link1" href="https://thanhtungios.github.io">Xem</a></span> </p>
                             </div>
                         </transition>
                         <br>
                         <br>
                         <div class="card">
                             <div class="card-body" v-show="showStep1">
-                                <h4 class="card-title">Chọn File IPA Của Bạn.</h4>
+                                <h4 class="card-title">Chọn tệp của bạn</h4>
                                 <div class="row mb-3">
                                     <div class="col-sm-12">
                                         <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
                                             <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
-                                            <label data-browse="Chọn" class="custom-file-label" for="ipa">
+                                            <label data-browse="Chọn" class="custom-file-label" for="ipa">
                                             <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
                                         </label>
                                         </div>
                                     </div>
                                 </div>
 
-                        <div class="row mb-3">
-                            <div class="col-sm-6">
-                                <div class="custom-file b-form-file is-invalid" v-bind:class="p12Css">
-                                    <input type="file" @change="getFile($event)" ref="p12" required="required" accept=".p12" aria-required="true" class="custom-file-input" v-bind:class="p12Css" id="p12" style="z-index: -5;">
-                                    <label data-browse="Chọn" class="custom-file-label" for="p12">
-                                    <span class="d-block form-file-text" style="pointer-events: none;">{{ p12Text }}</span>
-                                </label>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <div class="custom-file b-form-file is-invalid" v-bind:class="p12Css">
+                                            <input type="file" @change="getFile($event)" ref="p12" required="required" accept=".p12" aria-required="true" class="custom-file-input" v-bind:class="p12Css" id="p12" style="z-index: -5;">
+                                            <label data-browse="Chọn" class="custom-file-label" for="p12">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ p12Text }}</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" v-model="password" ref="pwd" placeholder="Nhập mật khẩu .p12" required="required" aria-required="true" aria-invalid="true" class="form-control" v-bind:class="pwdCss" id="password">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" v-model="password" ref="pwd" placeholder="Nhập mật khẩu .p12" required="required" aria-required="true" aria-invalid="true" class="form-control" v-bind:class="pwdCss" id="password">
-                            </div>
-                        </div>
 
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <div class="custom-file b-form-file" v-bind:class="mobCss">
-                                    <input type="file" ref="mob" @change="getFile($event)" required="required" accept=".mobileprovision" aria-required="true" class="custom-file-input" v-bind:class="mobCss" id="mobileprovision" style="z-index: -5;">
-                                    <label data-browse="Chọn" class="custom-file-label" for="mobileprovision">
-                                    <span class="d-block form-file-text" style="pointer-events: none;">{{ mobText }}</span>
-                                </label>
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <div class="custom-file b-form-file" v-bind:class="mobCss">
+                                            <input type="file" ref="mob" @change="getFile($event)" required="required" accept=".mobileprovision" aria-required="true" class="custom-file-input" v-bind:class="mobCss" id="mobileprovision" style="z-index: -5;">
+                                            <label data-browse="Chọn" class="custom-file-label" for="mobileprovision">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ mobText }}</span>
+                                        </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <input type="text" v-model="identifier" ref="identifier" placeholder="Nhập id ứng dụng" class="form-control" id="identifier">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <input type="text" v-model="name" ref="name" placeholder="Nhập tên ứng dụng" class="form-control" id="name">
+                                    </div>
+                                </div>
 
                                 <div class="row mb-3">
                                     <div class="col-sm-6">
                                         <label class="form-control">
-                                        <span>Xóa Dylib</span>
-                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue"> Có</div>
-                                        </span>
-                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue"> Không</div>
+                                        <span>Xóa deb, dylib hiện có</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue"> Có</div>
                                     </label>
                                     </div>
                                     <div class="col-sm-6">
                                         <label class="form-control">
-                                        <span>Xóa deb </span>
-                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue"> Không</div>
-                                        </span>                                   
-                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue"> Có</div>
+                                        <span>Xóa deb, dylib hiện có</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue"> Không</div>
                                     </label>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-block" @click="upload">
-                                    <embed class="tab2" src="https://github.com/KyipaThanhTung/KyipaThanhTung.github.io/blob/main/img/butky.png">
-                                Ký ngay bây giờ...!
+                                    <embed class="tab2" src="https://github.com/HHNiOS/hhnios.github.io/blob/main/img/pen.png?raw=true">
+                                Ký ngay bây giờ!
                             </button>
                             </div>
 
                             <div class="card-body" v-show="showStep2">
-                                <h4 class="card-title">Đang Tải Tệp Lên.</h4>
+                                <h4 class="card-title">Tệp Đang Được tải lên</h4>
                                 <div class="progress">
                                     <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progressBar }}" class="progress-bar bg-success progress-bar-striped progress-bar-animated" v-bind:style="{'width': progressBar + '%'}"><strong>{{ progressBar }}%</strong>
                                     </div>
@@ -245,26 +249,26 @@
                             </div>
 
                             <div class="card-body" v-show="showStep3">
-                                <h4 class="card-title">Đang Duyệt Tệp Tin Của Bạn</h4>
+                                <h4 class="card-title">Tệp Đang Tải Lên</h4>
                                 <svg style="height: 20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-spin">
                                     <path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" class=""></path>
-                            </svg> Quá Trình Xử Lý Tệp Có Thể Mất íT Phút Vui Lòng Đợi...!
+                            </svg> Tệp Của Bạn Đang Được Xử Lý, vui lòng đợi ...
                             </div>
 
                             <div class="card-body" v-show="showStep4">
-                                <h4 class="card-title"> Cài Đặt Ứng Dụng </h4>
+                                <h4 class="card-title">Cài đặt ứng dụng</h4>
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <h6> Quét Mã QR Bằng Camera </h6>
+                                        <h6>Quét mã QR bằng Camera</h6>
                                         <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <h6>Sao chép hoặc gửi liên kết bên dưới !</h6>
+                                        <h6>Sao chép hoặc gửi liên kết bên dưới !</h6>
                                         <a :href="download" target="_self" class="d-block mx-auto">{{download}}</a>
-                                        <div style="margin-top: 48px;"><a :href="download_ipa"> Download IPA </a></div>
+                                        <div style="margin-top: 48px;"><a :href="download_ipa">Tải xuống IPA</a></div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn mt-3 btn-primary btn-block" @click="index"> Ký lại !</button>
+                                <button type="button" class="btn mt-3 btn-primary btn-block" @click="index">Ký lại !</button>
                             </div>
 
                         </div>
@@ -285,13 +289,13 @@
                 showStep4: false,
                 progressBar: 0,
                 ipaCss: 'is-invalid',
-                ipaText: 'Chọn Tệp .ipa Thêm Vào Đây...',
+                ipaText: 'Chọn một tệp .ipa hoặc thả nó vào đây ...',
                 p12Css: 'is-invalid',
-                p12Text: 'Chọn Tệp .p12 Thêm Vào Đây...',
+                p12Text: 'Chọn một tệp .p12 hoặc thả nó vào đây ...',
                 pwdCss: 'is-invalid',
-                pwdText: 'Mật Khẩu Chứng Chỉ .p12',
+                pwdText: 'Nhập mật khẩu .p12',
                 mobCss: 'is-invalid',
-                mobText: 'Chọn Tệp .mobileprovision Thêm Vào Đây...',
+                mobText: 'Chọn một tệp .mobileprovision hoặc thả nó vào đây ...',
                 download: '',
                 download_ipa: '',
                 ipa: '',
@@ -313,7 +317,7 @@
                                 this.ipa = params.target.files[0];
                             } else {
                                 this.ipaCss = 'is-invalid';
-                                this.ipaText = 'Chọn Tệp .ipa Thêm Vào Đây...';
+                                this.ipaText = 'Chọn một tệp .ipa hoặc thả nó vào đây ...';
                                 this.ipa = '';
                             }
                             break;
@@ -324,7 +328,7 @@
                                 this.p12 = params.target.files[0];
                             } else {
                                 this.p12Css = 'is-invalid';
-                                this.p12Text = 'Chọn Tệp .p12 Thêm Vào Đây...';
+                                this.p12Text = 'Chọn một tệp .ipa hoặc thả nó vào đây ...';
                                 this.p12 = '';
                             }
                             break;
@@ -335,7 +339,7 @@
                                 this.mobileprovision = params.target.files[0];
                             } else {
                                 this.mobCss = 'is-invalid';
-                                this.mobText = 'Tệp .mobileprovision Thêm Vào Đây...';
+                                this.mobText = 'Chọn một tệp .mobileprovision hoặc thả nó vào đây ...';
                                 this.mobileprovision = '';
                             }
                             break;
@@ -387,7 +391,7 @@
                             this.status(data);
 
                         } else {
-                            alert('Vui Lòng Kiểm Tra Lại Mật Khẩu Chứng Chỉ');
+                            alert('Vui lòng kiểm tra mật khẩu chứng chỉ');
                         }
                     }).catch(function(error) {
                         alert(error);
@@ -419,14 +423,14 @@
                             });
                             qrcode.makeCode(that.download);
                         } else if (response.data.code == 1) {
-                            console.info("Đang ký");
+                            console.info("Đang ký");
                             setTimeout("this.status()", "3000");
                             const timer = setInterval(() => {
                                 clearInterval(timer)
                                 this.status(params);
                             }, 3000)
                         } else {
-                            alert(" Ký Không Thành Công");
+                            alert("Chữ ký không thành công");
                             return;
                         }
                     });
@@ -455,10 +459,9 @@
     </div>
     <br><br>
     <center>
-    <p class="text1">Copyright © by sign.ipasign.cc</p>
-    <p class="text2">Được chỉnh sửa và Push Lên Lại Bởi Thanh Tùng</p>
-        
-</div>
+    <p class="text5">Copyright © by sign.ipasign.cc</p>
+    <p class="text5">Được chỉnh sửa và Push lên lại bỏi メ Tùng. </p>
+    </center>
 
 </body>
 

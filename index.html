@@ -1,120 +1,1996 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== BOX ICONS ==========-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ Lazyvn / Kho IPA / Deb / Dylib </title>
+  <link rel="shortcut icon" href="https://lazyvn.github.io/img/nencss.JPG" type="image/x-icon">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style-prefix.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-        <title>Responsive website food</title>
-    </head>
-    <body>
+</head>
 
-            <!--========== MENU ==========-->
-            <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">iLos.HN</span>
-                <h2 class="section-title">IPA Library Download Moded IPA</h2>
+<body>
 
-                <div class="menu__container bd-grid">
-                    <div class="menu__content">
-                        <img src="./ilos.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Liên Quân</h3>
-                        <span class="menu__detail">Xin Hãy Chơi Kín</span>
-                        <span class="menu__preci">Free $</span>
-                        <a rel="src"href="https://drive.google.com/file/d/12AA_dKykGfpFBhE5JqRHRFkuUgFqSOuu/view?usp=drivesdk"href="link"class="button menu__button"><i class='bx bx-cart-alt'>Download</i></a>
-                    </div>
-                
-                </div>
-            </section>
 
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
-                        <span class="section-subtitle app__initial">iLos Shop</span>
-                        <h2 class="section-title app__initial">Apps is aviable</h2>
-                        <p class="app__description">....</p>
-                        <div class="app__stores">
-                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
-                        </div>
-                    </div>
+  <div class="overlay" data-overlay></div>
 
-                    <img src="assets/img/movil-app.png" alt="" class="app__img">
-                </div>
-            </section>
+  <div class="modal" data-modal>
 
-            <!--========== CONTACT US ==========-->
-            <section class="contact section bd-container" id="contact">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Let's talk</span>
-                        <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
-                    </div>
+    <div class="modal-close-overlay" data-modal-overlay></div>
 
-                    <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+    <div class="modal-content">
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
-                    <span class="footer__description">Restaurant</span>
-                    <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                    </div>
-                </div>
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Delivery</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                    </ul>
-                </div>
+      <div class="newsletter-img">
+        <img src="https://lazyvn.github.io/img/apple.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Information</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Event</a></li>
-                        <li><a href="#" class="footer__link">Contact us</a></li>
-                        <li><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li><a href="#" class="footer__link">Terms of services</a></li>
-                    </ul>
-                </div>
+      <div class="newsletter">
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Adress</h3>
-                    <ul>
-                        <li>Lima - Peru</li>
-                        <li>Jr Union #999</li>
-                        <li>999 - 888 - 777</li>
-                        <li>tastyfood@email.com</li>
-                    </ul>
-                </div>
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Chào mừng bạn đến với Website Lazyvn.com</h3>
+
+            <p class="newsletter-desc">
+              Kho IPA Dành Cho Trollstore <b>& </b> iPhone No Jailbreak !
+            </p>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <a href="https://t.me/lazylor">
+      <img src="https://lazyvn.github.io/img/aovvip.JPEG" alt="Rose Gold Earrings" width="80" height="70"></a>
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message"></a>
+        Sản Phẩm Nổi Bật
+      </p>
+
+      <p class="toast-title">
+        LQM Jailbreak Anti Report
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">Mua Ngay</time>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://t.me/lazylor" class="social-link">
+              <ion-icon name="logo-telegram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Lazyvn</b>
+            Kho IPA File , Deb File Tổng Hợp Cho iPhone,
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="https://lazyvn.github.io/img/Odyssey.png" alt="Anon's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Comingsoon...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Trang Chủ</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Nổi gần đây</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="https://lazyvn.github.io/img/Odyssey.png" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+       
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      
+        <a href="#"><button class="action-btn" data-modal>
+        <ion-icon name='logo-apple'></ion-icon>
+      </button></a>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name='logo-codepen'></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Trang Chủ</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Repo IPA Esign, Gbox, Scarlet</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="esign://addsource?url=https://lazyvn.com/app.json" class="submenu-title">Thêm Nguồn Esign</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="gbox://addsource?url=https://lazyvn.com/app.json" class="submenu-title">Thêm Nguồn Gbox</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="scarlet://addsource?url=https://lazyvn.github.io/repo/app.json" class="submenu-title">Thêm Nguồn Scarlet</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="altstore://addsource?url=https://lazyvn.github.io/repo/app.json" class="submenu-title">Thêm Nguồn AltStore</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Cấu Hình DNS By Khoindvn</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://github.com/ESign-khoindvn/ESign-Khoindvn.github.io/raw/main/ESignIPA/khoindvn.mobileconfig" class="submenu-title">Cài Đặt Cấu Hình</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Lấy UDID</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://udid.tech/static/configs/udid_tech.signed.mobileconfig" class="submenu-title">Lấy Ngay</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Mua Chứng Chỉ,</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Liên hệ mua ngay,</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Chứng chỉ Apple là gì ?</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">TikTok</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Youtobe</a>
+        </li>
+
+      </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Hướng dẫn sử dụng</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Hướng dẫn sử dụng Esign </a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Hướng dẫn sử dụng Scarlet </a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Hướng dẫn sử dụng Gbox </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/179.mtt" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="https://lazyvn.github.io/img/TrollStore.png" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">TrollStore 15</p>
+
+              <p class="banner-text">
+               Hỗ Trợ iOS 15-15.5(Không hỗ trợ 15.5RC)&dollar; <b>Miễn Phí...</b>
+              </p>
+
+              <a href="https://api.jailbreaks.app/troll" class="banner-btn">Cài Đặt</a>
+
             </div>
 
-            <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
-        </footer>
+          </div>
 
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+          <div class="slider-item">
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <img src="https://lazyvn.github.io/img/TrollStore.png" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">TrollStore 14</p>
+
+
+
+              <p class="banner-text">
+                Hỗ Trợ iOS 14-14.8(Không Hỗ Trợ A11) &dollar; <b>Miễn Phí</b>
+              </p>
+
+              <a href="https://is.gd/34306installer14" class="banner-btn">Cài Đặt</a>
+
+            </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Group Support</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://lazyvn.github.io/img/telegram.png" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Support Telegram</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://t.me/lazyvnsupport" class="sidebar-submenu-title">
+                      <p class="product-name">Group Support</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://t.me/ioshackkingchannel" class="sidebar-submenu-title">
+                      <p class="product-name">Group IPA</p>
+                      <data value="179" class="stock" title="Available Stock">Update hằng ngày</data>
+                    </a>
+                  </li>              
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://lazyvn.github.io/img/zalo2.png" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Support Zalo</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://zalo.me/0369171709" class="sidebar-submenu-title">
+                      <p class="product-name">Liên hệ zalo</p>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Nổi Bật Gần Đây</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://lazyvn.github.io/img/aovvip.JPEG" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://drive.google.com/file/d/1l4kWCawv-fx5vbFOhVMJJEWM0tI-pOAm/view?usp=drivesdk">
+                      <h4 class="showcase-title">Liên Quân (Chơi kín)</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name='cloud-download'></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$150.000</del>
+                      <p class="price">$Miễn Phí</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://lazyvn.github.io/img/aovvip.JPEG" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://drive.google.com/file/d/1HZ5Scyux5szNuPYAg8-Nm1H7eZBlEbZO/view?usp=drivesdk">
+                      <h4 class="showcase-title">LQM AIM (Chơi Kín)</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name='cloud-download'></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$100.000</del>
+                      <p class="price">$Free</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://lazyvn.github.io/img/ckeckra1n.png" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://drive.google.com/file/d/1pAcUC__pukxusZCCmQmQsLScgmURwMjv/view?usp=sharing">
+                      <h4 class="showcase-title">Wira1n </h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name='cloud-download'></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p>Jailbrack A9-A11</p>
+                      <p class="price">14-16.5.1</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://lazyvn.github.io/img/igg.png" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://drive.google.com/file/d/1p-mps3G7YySrWqDNWrB_rs9z7W_WJOc6/view?usp=drivesdk">
+                      <h4 class="showcase-title">iGame Gods</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name='cloud-download'></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                     <p>Crack ADS</p>
+                      <p class="price">$Tiêm Vào IPA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+       
+        <div class="product-box">
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">IPA No Jiallbrack</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a>
+                      <img src="https://lazyvn.github.io/img/Xingtu.png" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a>
+                        <h4 class="showcase-title">Xinh Tu</h4>
+                      </a>
+
+                      <a  class="showcase-category">Premium</a>
+
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1nTDZF9Y20T7R2gNc6n6nNJPStdKixeQQ/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <del></del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a>
+                      <img src="https://lazyvn.github.io/img/aovvip.JPEG" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a>
+                        <h4 class="showcase-title">Liên Quân AIM (Chơi kín)</h4>
+                      </a>
+                  
+                      <a class="showcase-category">AIM ghim tâm</a>
+                  
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1HZ5Scyux5szNuPYAg8-Nm1H7eZBlEbZO/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>1.51</a>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a>
+                      <img src="https://lazyvn.github.io/img/aovvip.JPEG" alt="black floral wrap midi skirt" class="showcase-img"width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a>
+                        <h4 class="showcase-title">Liên Quân (Chơi kín)</h4>
+                      </a>
+                  
+                      <a class="showcase-category">Tải Xuống</a>
+                  
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1l4kWCawv-fx5vbFOhVMJJEWM0tI-pOAm/view?usp=drivesdk" class="showcase-category">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>1.51</a>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a>
+                      <img src="https://lazyvn.github.io/img/Youtobe.png" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a>
+                        <h4 class="showcase-title">uYou Plus++</h4>
+                      </a>
+                  
+                      <a class="showcase-category">Bản mới nhất</a>
+                  
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1gzpVDs0ljgdKy3TAY_RyVEdp1h9EzuFO/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p>
+                        <a></a>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a>
+                      <img src="https://lazyvn.github.io/img/chimeralogo.png" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a>
+                        <h4 class="showcase-title">Chimera</h4>
+                      </a>
+                
+                      <a class="showcase-category">Jailbreak iOS 12.2 - 12.5.7</a>
+                
+                      <div class="price-box">
+                        <a href="https://github.com/coolstar/electra-ipas/raw/master/chimera/1.6.5-12.2-12.5.ipa">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>A...</a>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a>
+                      <img src="https://lazyvn.github.io/img/UNC0VER.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a>
+                        <h4 class="showcase-title">Unc0ver</h4>
+                      </a>
+                
+                      <a class="showcase-category">Jailbreack 11-14.8</a>
+                
+                      <div class="price-box">
+                        <a href="https://www.unc0ver.dev/downloads/8.0.2/9e44edfbfd1905cadf23c3b9ad1d5bed683ce061/unc0ver_Release_8.0.2.ipa">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>A ...</a>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a>
+                      <img src="https://lazyvn.github.io/img/odyseelogo.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a>
+                        <h4 class="showcase-title">Odyssey</h4>
+                      </a>
+                
+                      <a class="showcase-category">Jailbrack 13.0-13.7</a>
+                
+                      <div class="price-box">
+                        <a href="https://github.com/Odyssey-Team/Odyssey/releases/download/v1.4.3/Odyssey-1.4.3.ipa">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>A....</a>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a>
+                      <img src="https://lazyvn.github.io/img/xinaa15logo.png" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a>
+                        <h4 class="showcase-title">Xina A15</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Jailbrack 15-15.1.1</a>
+                
+                      <div class="price-box">
+                        <a href="sideloadly:https://apt.xina.vip/XinaA12.1.1.8.ipa">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>A....</a>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Xin Chào Bạn Ăn Cơm Chưa ?</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/dynamiccowiconpreview.png" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Dynamic Cow</h4>
+                      </a>
+            
+                      <a class="showcase-category">Tin Chỉnh</a>
+            
+                      <div class="price-box">
+                        <a href="https://github.com/matteozappia/DynamicCow/releases/download/1.1/DynamicCow.ipa">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>v1.1</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/cowabunga.png" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Cowabunga</h4>
+                      </a>
+            
+                      <a class="showcase-category">Tin Chỉnh</a>
+            
+                      <div class="price-box">
+                        <a href="https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa">
+                        <p class="price">Tải Xuống</p>
+                        <a>v10.3.2</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/picsart.jpg" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Picsart</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1uiPIwIWpC-Sk63WOItpHC6WtKsyZ8Azf/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>22.8.0</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/Remini.JPG" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Remini</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1WO3xEvW-ASrGhkjJcw7zx6KW3IhH45n5/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>2.9.64</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/spectra.jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Spectra</h4>
+                      </a>
+            
+                      <a class="showcase-category">Được bán trên Appstore</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1NBXbV8mj3aiEMh0RIo89cbdBX2qGUZOJ/view?usp=drive_link">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>1.5.6</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/b612.png" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">B612++</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1gwidlxAPkbtvJiyucJIGGp8AJ3NGqMT3/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>12.2.6</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/beautypluslogo.png" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Beatyful Plus</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1FozriqZBBtQedU-3Bv-gG4P3qyeIK7jU/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>7.6.060</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/roblox.png" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Roblox</h4>
+                      </a>
+            
+                      <a class="showcase-category">hực thi Script</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1zPQ9pKjSq3yFfL7iXZyivEJrrSxUbDaP/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>2.586.0</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Bạn Khỏe Không ?</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/nextflix.png" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Netflix</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/14PtL16R-R9Q3Gm6K5o672ArAe1OCf8a_/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>14.45.1</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/snow.png" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Snow AI</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1i9oBOFd_7gMRvkc2wX9XqHcfwvF_4bXR/view?usp=sharing">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>12.2.6</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/status.png" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Status Magic</h4>
+                      </a>
+            
+                      <a class="showcase-category">Tin Chỉnh</a>
+            
+                      <div class="price-box">
+                        <a href="https://github.com/Avangelista/StatusMagic/releases/download/1.0.2/StatusMagic.ipa">
+                        <p class="price">Download</p>
+                        <a>1.0.2</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/facebooklogo.png" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Facebook</h4>
+                      </a>
+            
+                      <a class="showcase-category">Nhân bản</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1aFa973QTBoEDbP0EljBDQfdFnVT0ih5a/view?usp=drive_link">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>425.0</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/subwaylogo.png" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Subway Suft</h4>
+                      </a>
+            
+                      <a href="" class="showcase-category">Full Tài Nguyên</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1r_WA-F9XoqK26Jldf788fz6C1XzFhBDs/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>3.15.0</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/hillclimb2logo.png" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Hill Climb2</h4>
+                      </a>
+            
+                      <a class="showcase-category">Free Shop</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1JAknN13yGxK187P6D78mkV_n2B_Ngw5W/view?usp=drivesdk">
+                        <p class="price">Tải Xuống</p></a>
+                        <a></a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a>
+                      <img src="https://lazyvn.github.io/img/spotify.png" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a>
+                        <h4 class="showcase-title">Spotify</h4>
+                      </a>
+            
+                      <a class="showcase-category">Premium</a>
+            
+                      <div class="price-box">
+                        <a href="https://drive.google.com/file/d/1FxRsXt_WEenEW150f5dpoQhPNwaIU6-e/view?usp=sharing">
+                        <p class="price">Tải Xuống</p></a>
+                        <a>1.4.3</a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+          <div class="product-featured">
+
+            <h2 class="title"> Repo Scarlet</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/scarletdemo.png" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name='cog-sharp'></ion-icon>
+                      <ion-icon name='cog-sharp'></ion-icon>
+                      <ion-icon name='cog-sharp'></ion-icon>
+                    </div>
+
+                    <a>
+                      <h3 class="showcase-title">Scarlet</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Chào mừng bạn đến với Scarlet, trải nghiệm nhanh nhất và mượt mà nhất để cài đặt và quản lý các ứng dụng yêu thích của bạn. 
+                      Scarlet có nhiều tùy chọn phổ biến nhất là cài đặt trực tiếp hoặc cài đặt bằng phương pháp máy tính Scarlet.
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Scarlet</p>
+
+                      <a>Thêm Repo Scarlet</a>
+                    </div>
+                     <a href="https://lazyvn.com/repo/app.json">
+                    <button class="add-cart-btn">ADD Repo</button></a>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          <b>Cài đặt 1 sô IPA trực tiếp chúng tôi đã thêm vào</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        I Love in Vietnamese🇻🇳
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">2</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">0</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">2</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">3</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Rose Gold diamonds Earring</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$1990.00</p>
+                      <del>$2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Dành Cho TrollStore</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="https://lazyvn.github.io/img/ITheosMaker.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="https://lazyvn.github.io/img/logo2023.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">TrollStore</p>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="apple-magnifier://install?url=https://archive.org/download/itheos-maker/ITheosMaker.ipa" class="showcase-category">Trollstore Redirect</a>
+                  
+                  <div class="showcase-rating">
+                  <ion-icon name="logo-ionic"></ion-icon>
+                  <ion-icon name="cloud"></ion-icon>
+                  </div>
+                  <a>
+                    <h3 class="showcase-title">Công cụ make File trên điện thoại</h3>
+                  </a>
+                  <div class="price-box">
+                    <p class="price">iTheosmaker</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://lazyvn.github.io/img/DebToIPA.png" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="https://lazyvn.github.io/img/logo2023.png" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+                    <p class="showcase-badge">TrollStore</p>
+  
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="apple-magnifier://install?url=https://archive.org/download/deb-to-ipa/DebToIPA.ipa" class="showcase-category">TrollStore Redirect</a>
+              
+                  <h3>
+                    <a class="showcase-title">Công cụ chuyển Deb sang IPA</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="logo-ionic"></ion-icon>
+                    <ion-icon name="cloud"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">Deb To IPA</p>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://lazyvn.github.io/img/trolltools.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+
+                <p class="showcase-badge">TrollStore</p>
+            
+              </div>
+
+                <div class="showcase-content">
+
+                  <a href="apple-magnifier://install?url=https://github.com/sourcelocation/TrollTools/releases/download/3.0/TrollTools.tipa" class="showcase-category">TrollStore Redirect</a>
+              
+                  <h3>
+                    <a class="showcase-title">Tin chỉnh</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="logo-ionic"></ion-icon>
+                    <ion-icon name="cloud"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">TrollTools</p>
+                  </div>
+
+                </div>
+              
+                </div>
+           
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/Delta.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://archive.org/download/delta_202308/Delta.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Quên</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">DelTa</p>
+                    </div>
+                
+                  </div> 
+
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/Delta.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://archive.org/download/fugu-15_202308/Fugu15.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Jailbrack</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">Fugu Max15</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/AppStore++.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://archive.org/download/app-store_202308/AppStore%2B%2B.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Xuất IPA</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">Appstore++</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/igg.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://archive.org/download/i-game-god-lazy-1.0-1690764603/iGameGod%20-%20Lazy%F0%9F%87%BB%F0%9F%87%B3_1.0_1690764603.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Hack giá trị</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">iGameGods</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/Santander.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://github.com/lazyvn/lazyvn.github.io/raw/main/Santander.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Trình quản lý như Filza</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">Santander</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/ModMyIPA.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://github.com/lazyvn/lazyvn.github.io/raw/main/ModMyIPA_TS.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Xuất IPA</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">ModmyIPA</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://lazyvn.github.io/img/appdump.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="https://lazyvn.github.io/img/logo2023.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+  
+                  <p class="showcase-badge">TrollStore</p>
+              
+                </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="apple-magnifier://install?url=https://github.com/lazyvn/lazyvn.github.io/raw/main/ModMyIPA_TS.ipa" class="showcase-category">TrollStore Redirect</a>
+                
+                    <h3>
+                      <a class="showcase-title">Xuất IPA cho Xina và Dopa</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="logo-ionic"></ion-icon>
+                      <ion-icon name="cloud"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">Appdump</p>
+                    </div>
+                
+                  </div> 
+                              
+                </div>
+
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Me,</h2>
+
+            <div class="testimonial-card">
+
+              <img src="https://lazyvn.github.io/img/logo2023.png" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Lazyvn.com</p>
+
+              <p class="testimonial-title">Mai Thanh Tùng</p>
+
+              <img src="https://lazyvn.github.io/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Cảm ơn vì đã tin tưởng và dùng IPA Deb, tại Lazyvn.com,
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="service">
+
+            <h2 class="title">Liên Hệ Tôi,</h2>
+
+            <div class="service-container">
+
+              <a href="https://t.me/lazyvnsupport" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Group Supprt</h3>
+                  <p class="service-desc">Telegram: chuyển đến telgram để được Support</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="mailto:chivasregal73@icloud.com?subject" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Gửi ý yêu cầu qua mail,</h3>
+                  <p class="service-desc">gửi yêu cầu hoặc thắc mắc của bạn qua mail tôi</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="https://lazyvn.github.io/img/stmtp.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a class="blog-category">Sơn Tùng M-TP</a>
+
+              <a>
+                <h3 class="blog-title">Chú giấu kỹ quá, anh chẳng biết gì cả.</h3>
+              </a>
+
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Mai Thanh Tùng,</h2>
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">From</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+             Tôi Đến Từ Khu Du lịch Phong Nha Kẻ Bàng,
+            </address>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p class="copyright">
+          Copyright &copy; <a href="https://t.me/lazylor">Lazy</a> Mai Thanh Tùng
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
